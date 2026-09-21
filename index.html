@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Delius&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined">
+    <title>iFood Landing Page</title>
+</head>
+
+<body>
+    <header>
+        <div class="menu-header">
+            <button class="menu-header-button"><img src="./assets/menu.svg"></button>
+            <img class="ifood-logo" src="./assets/Ifood.webp">
+        </div>
+        <nav>
+            <div class="nav-links">
+                <a class="nav-link">Entregador</a>
+                <a class="nav-link">Restaurante e Mercado</a>
+                <a class="nav-link">Carreiras</a>
+                <a class="nav-link">iFood Benefícios</a>
+            </div>
+            <div class="nav-login">
+                <a class="create-account-link">criar conta</a>
+                <a class="enter-link">Entrar</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="coupon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                class="icon icon-tabler icons-tabler-outline icon-tabler-ticket" id="coupon-icon">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                <path d="M15 5l0 2" />
+                <path d="M15 11l0 2" />
+                <path d="M15 17l0 2" />
+                <path
+                    d="M5 5h14a2 2 0 0 1 2 2v3a2 2 0 0 0 0 4v3a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2v-3a2 2 0 0 0 0 -4v-3a2 2 0 0 1 2 -2" />
+            </svg>
+            <div class="coupon-content">
+                <h3 class="coupon-content-title">Ganhe cupons!</h3>
+                <p class="coupon-content-description">Pegue seu cupom e aproveite o desconto</p>
+                <a class="coupon-content-link">Criar conta</a>
+            </div>
+            <span class="material-symbols-outlined close" id="close-icon">
+                close
+            </span>
+        </div>
+
+        <div class="home">
+            <div class="home-texts">
+                <h1 class="home-title">Tudo pra facilitar seu dia a dia</h1>
+                <p class="home-description">O que você precisa está aqui. Peça e receba onde estiver.</p>
+            </div>
+            <div class="address">
+                <div class="address-input">
+                    <button class="location-icon"><img src="./assets/pino de localização.png"></button>
+                    <input placeholder="Endereço de entrega e número">
+                </div>
+                <button class="search-button">Buscar</button>
+            </div>
+        </div>
+
+        <div class="cards">
+            <div class="larger-cards">
+                <a class="larger-card" id="restaurant-card">
+                    <h2>Restaurante</h2>
+                    <img src="./assets/restaurant.png">
+                    <button class="button-larger-card" id="button-restaurant-card">Ver opções <span>></span></button>
+                </a>
+                <a class="larger-card" id="market-card">
+                    <h2>Mercado</h2>
+                    <img src="./assets/market.avif">
+                    <button class="button-larger-card" id="button-market-card">Buscar lojas <span>></span></button>
+                </a>
+            </div>
+            <div class="smaller-cards">
+                <a class="smaller-card" id="drink-card">
+                    <img src="./assets/drinks.png">
+                    <p class="smaller-card-title">Bebidas <span>></span></p>
+                </a>
+                <a class="smaller-card" id="pharmacy">
+                    <img src="./assets/pharmacy.avif">
+                    <p class="smaller-card-title">Farmácia <span>></span></p>
+                </a>
+                <a class="smaller-card" id="pet-shop-card">
+                    <img src="./assets/petshop.png">
+                    <p class="smaller-card-title">Pet shop <span>></span></p>
+                </a>
+            </div>
+        </div>
+    </main>
+
+    <section class="restaurant-section">
+        <div class="restaurant-window">
+
+            <h1 class="restaurant-section-title">Os melhores restaurantes</h1>
+
+            <div class="restaurant-slide-buttons">
+                <button disabled class="slide-button restaurant-left"><img src="./assets/arrow-back.png"></button>
+                <button class="slide-button restaurant-right"><img src="./assets/arrow-forward.png"></button>
+            </div>
+
+            <div class="restaurant-cards">
+                <a class="restaurant-card">
+                    <img src="./assets/Mc Donald´s.jpg">
+                    <div class="restaurant-card-titles">
+                        <h2 class="card-title">Mc Donald´s</h2>
+                        <p class="card-subtitle">Lanches</p>
+                    </div>
+                    <button class="verification"><img src="./assets/selo-verificado.jpg"></button>
+                </a>
+                <a class="restaurant-card">
+                    <img src="./assets/Coco Bambu.png">
+                    <div class="restaurant-card-titles">
+                        <h2 class="card-title">Coco Bambu</h2>
+                        <p class="card-subtitle">Frutos do Mar</p>
+                    </div>
+                    <button class="verification"><img src="./assets/selo-verificado.jpg"></button>
+                </a>
+                <a class="restaurant-card">
+                    <img src="./assets/China In Box.png">
+                    <div class="restaurant-card-titles">
+                        <h2 class="card-title">China in Box</h2>
+                        <p class="card-subtitle">Chinesa</p>
+                    </div>
+                    <button class="verification"><img src="./assets/selo-verificado.jpg"></button>
+                </a>
+                <a class="restaurant-card">
+                    <img src="./assets/Habibs.jpg">
+                    <div class="restaurant-card-titles">
+                        <h2 class="card-title">Habib´s</h2>
+                        <p class="card-subtitle">Lanches</p>
+                    </div>
+                    <button class="verification"><img src="./assets/selo-verificado.jpg"></button>
+                </a>
+                <a class="restaurant-card">
+                    <img src="./assets/Outback.png">
+                    <div class="restaurant-card-titles">
+                        <h2 class="card-title">Outback Steakhouse</h2>
+                        <p class="card-subtitle">Lanches</p>
+                    </div>
+                    <button class="verification"><img src="./assets/selo-verificado.jpg"></button>
+                </a>
+            </div>
+        </div>
+
+        <div class="restaurant-banners">
+            <a class="restaurant-banner">
+                <img src="./assets/landing-banner-1.png">
+            </a>
+            <a class="restaurant-banner">
+                <img src="./assets/landing-banner-2.png">
+            </a>
+            <a class="restaurant-banner">
+                <img src="./assets/landing-banner-3.png">
+            </a>
+        </div>
+    </section>
+
+    <section class="market-section">
+        <div class="market-window">
+            <h1 class="market-section-title">Os melhores mercados</h1>
+
+            <div class="market-slide-buttons">
+                <button disabled class="slide-button market-left"><img src="./assets/arrow-back.png"></button>
+                <button class="slide-button market-right"><img src="./assets/arrow-forward.png"></button>
+            </div>
+
+            <div class="market-cards">
+                <a class="market-card">
+                    <img src="./assets/dia-logo.avif">
+                    <h2 class="card-title">Dia Supermercado</h2>
+                </a>
+                <a class="market-card">
+                    <img src="./assets/big-logo.avif">
+                    <h2 class="card-title">Big</h2>
+                </a>
+                <a class="market-card">
+                    <img src="./assets/eataly-logo.avif">
+                    <h2 class="card-title">Eataly</h2>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <article class="register-article">
+        <div class="register-article-delivery">
+            <div class="images">
+                <img class="delivery-man-image" src="./assets/delivery-man.svg">
+                <img class="background-image" src="./assets/link-background.svg">
+            </div>
+            <div class="register-content">
+                <h1 class="register-content-title">Quer fazer entregas pelo iFood?</h1>
+                <p class="register-content-description">Faça agora o seu cadastro e comece o quanto antes.</p>
+                <button class="register-content-button">Saiba mais</button>
+            </div>
+        </div>
+        <div class="register-article-enterprise">
+            <div class="images">
+                <img class="store-image" src="./assets/store.svg">
+                <img class="background-image" src="./assets/link-background.svg">
+            </div>
+            <div class="register-content">
+                <h1 class="register-content-title">A sua fome de crescer ta no iFood</h1>
+                <p class="register-content-description">Cadastre seu restaurante ou o seu mercado</p>
+                <button class="register-content-button">Saiba mais</button>
+            </div>
+        </div>
+    </article>
+
+    <article class="food-lover-article">
+        <div class="food-lover-content">
+            <h1 class="food-lover-content-title">Você tem fome do quê?</h1>
+            <p class="food-lover-content-description">Descubra como é ser um FoodLover e faça parte da nossa revolução!
+            </p>
+            <button class="food-lover-content-button">Saiba mais</button>
+        </div>
+        <img src="./assets/food-lover-banner.webp">
+    </article>
+
+    <div class="benefits">
+        <a class="benefits-banner">
+            <img class="logo-benefits-card" src="./assets/logo-benefits-card.svg">
+            <h2 class="benefits-content-description">O vale-alimentação do iFood taxa zero para a sua empresa</h2>
+            <img class="benefits-card" src="./assets/benefits-card.svg">
+        </a>
+        <a class="benefits-content">
+            <h2 class="benefits-content-description">O vale-alimentação do iFood <br>
+                taxa zero para a sua empresa</h2>
+            <img class="benefits-card-illustration" src="./assets/benefits-card-illustration.svg">
+        </a>
+    </div>
+
+    <div class="gap-of-footer"></div>
+
+    <footer>
+        <section class="footer-section-about">
+            <div class="footer-column" id="footer-column-ifood">
+                <h2>iFood</h2>
+                <a>Site Institucional</a>
+                <a>Fale Conosco</a>
+                <a>Conta e Segurança</a>
+                <a>Carreiras</a>
+                <a>Entregadores</a>
+            </div>
+            <div class="footer-column">
+                <h2>Descubra</h2>
+                <a>Cadastre seu Restaurante ou Mercado</a>
+                <a>iFood Shop</a>
+                <a>iFood Benefícios</a>
+                <a>Blog iFood Benefícios</a>
+            </div>
+            <div id="footer-column-social">
+                <h2>Social</h2>
+                <a><i class="fa-brands fa-facebook-f"></i></a>
+                <a><i class="fa-brands fa-x-twitter"></i></a>
+                <a><i class="fa-brands fa-youtube"></i></a>
+                <a><i class="fa-brands fa-instagram"></i></a>
+            </div>
+        </section>
+
+        <section class="copyright">
+            <div class="copyright-image-text">
+                <img class="ifood-smile-image" src="./assets/sorriso-ifood.png">
+                <div class="copyright-texts">
+                    <p class="copyright-text">© Copyright 2021 - iFood - Todos os direitos reservados iFood com Agência
+                        de Restaurantes Online S.A.</p>
+                    <p class="copyright-text">CNPJ 14.380.200/0001-21 / Avenida dos Autonomistas, nº 1496, Vila Yara,
+                        Osasco/SP - CEP 06.020-902</p>
+                </div>
+            </div>
+            <div class="copyright-links">
+                <a>Termos e condições de uso</a>
+                <a>Código de conduta</a>
+                <a>Privacidade</a>
+                <a>Dicas de segurança</a>
+            </div>
+        </section>
+    </footer>
+</body>
+
+<script src="./scripts.js"></script>
+
+</html>
